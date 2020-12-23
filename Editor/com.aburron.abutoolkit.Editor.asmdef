@@ -1,0 +1,17 @@
+{
+    "name": "com.aburron.abutoolkit.Editor",
+    "references": [
+        "GUID:b39063b3e0ed9ab0eaea65e3df04d364"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
