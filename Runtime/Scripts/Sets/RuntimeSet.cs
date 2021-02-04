@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace aburron.abutoolkit
+namespace aburron.abutoolkit.Sets
 {
 	public abstract class RuntimeSet<T> : ScriptableObject
 	{

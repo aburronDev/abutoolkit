@@ -1,30 +1,29 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
-namespace aburron.abutoolkit
+namespace aburron.abutoolkit.Events
 {
-	[CreateAssetMenu(fileName = "NewGameEvent", menuName = "aburron/abutoolkit/Events/GameEvent")]
+	[CreateAssetMenu(fileName = "NewGameEvent", menuName = "aburron/abutoolkit/Events/Game Event")]
 	public class GameEvent : ScriptableObject
 	{
-        private readonly List<GameEventListener> eventListeners =
-            new List<GameEventListener>();
+		private readonly List<GameEventResponse> responses = new List<GameEventResponse>();
 
-        public void FireEvent()
-        {
-            for (int i = eventListeners.Count - 1; i >= 0; i--)
-                eventListeners[i].OnEventFired();
-        }
+		public void Fire()
+		{
+			for (int i = responses.Count - 1; i >= 0; i--)
+				responses[i].OnEventFired();
+		}
 
-        public void RegisterListener(GameEventListener listener)
-        {
-            if (!eventListeners.Contains(listener))
-                eventListeners.Add(listener);
-        }
+		public void Register(GameEventResponse response)
+		{
+			if (!responses.Contains(response))
+				responses.Add(response);
+		}
 
-        public void UnregisterListener(GameEventListener listener)
-        {
-            if (eventListeners.Contains(listener))
-                eventListeners.Remove(listener);
-        }
-    }
+		public void Unregister(GameEventResponse response)
+		{
+			if (responses.Contains(response))
+				responses.Remove(response);
+		}
+	}
 }

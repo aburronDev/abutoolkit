@@ -1,17 +1,11 @@
 ﻿using UnityEngine;
 
-namespace aburron.abutoolkit
+namespace aburron.abutoolkit.Variables
 {
 	[CreateAssetMenu(fileName = "NewFloat", menuName = "aburron/abutoolkit/Variables/Float")]
-	public class FloatVariable : Variable<float> 
+	public class FloatVariable : NumericVariable<float> 
 	{
-		public void ChangeValue(float value) 
-		{
-			currentValue += value;
-			onValueChange?.Invoke();
-		} 
-
-		public void IncreaseValue() => currentValue++;
-		public void DecreaseValue() => currentValue--;
+		public override void IncreaseValue() => CurrentValue++;
+		public override void DecreaseValue() => CurrentValue--;
 	}
 }

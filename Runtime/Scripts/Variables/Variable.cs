@@ -1,30 +1,16 @@
-﻿using UnityEngine;
-using System;
+﻿using System;
+using UnityEngine;
 
-namespace aburron.abutoolkit
+namespace aburron.abutoolkit.Variables
 {
 	public abstract class Variable<T> : ScriptableObject
 	{
-		public Action onValueChange;
+		public Action OnValueChange { get; set; }
 
-		[SerializeField] protected T currentValue;
+		[SerializeField] private T currentValue;
 
 		public T CurrentValue { get => currentValue; set => currentValue = value; }
 
-		public void OnValidate() => onValueChange?.Invoke();
-
-		public T GetValue() => currentValue;
-
-		public void SetValue(T value)
-		{
-			currentValue = value;
-			onValueChange?.Invoke();
-		}
-
-		public void SetValue(Variable<T> variable) 
-		{
-			currentValue = variable.currentValue;
-			onValueChange?.Invoke();
-		}
+		public void OnValidate() => OnValueChange?.Invoke();
 	}
 }

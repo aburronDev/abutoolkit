@@ -1,10 +1,7 @@
 ﻿using UnityEngine;
 
-namespace aburron.abutoolkit
+namespace aburron.abutoolkit.Variables
 {
 	[CreateAssetMenu(fileName = "NewString", menuName = "aburron/abutoolkit/Variables/String")]
-	public class StringVariable : Variable<string> 
-	{
-		public void Join(string text) => currentValue += text;
-	}
+	public class StringVariable : Variable<string> { }
 }

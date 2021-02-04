@@ -1,12 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace aburron.abutoolkit
+﻿namespace aburron.abutoolkit.Variables
 {
-	[CreateAssetMenu(fileName = "NewBool", menuName = "aburron/abutoolkit/Variables/Bool")]
-	public class BoolVariable : ScriptableObject
-	{
-		public bool CurrentValue;
-	}
+	[UnityEngine.CreateAssetMenu(fileName = "NewBool", menuName = "aburron/abutoolkit/Variables/Bool")]
+	public class BoolVariable : Variable<bool> { }
 }

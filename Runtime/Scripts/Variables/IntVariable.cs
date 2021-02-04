@@ -1,17 +1,9 @@
-﻿using UnityEngine;
-
-namespace aburron.abutoolkit
+﻿namespace aburron.abutoolkit.Variables
 {
-	[CreateAssetMenu(fileName = "NewInt", menuName = "aburron/abutoolkit/Variables/Int")]
-	public class IntVariable : Variable<int> 
+	[UnityEngine.CreateAssetMenu(fileName = "NewInt", menuName = "aburron/abutoolkit/Variables/Int")]
+	public class IntVariable : NumericVariable<int> 
 	{
-		public void ChangeValue(int value)
-		{
-			currentValue += value;
-			onValueChange?.Invoke();
-		}
-
-		public void IncreaseValue() => ChangeValue(1);
-		public void DecreaseValue() => ChangeValue(-1);
+		public override void IncreaseValue() => CurrentValue++;
+		public override void DecreaseValue() => CurrentValue--;
 	}
 }

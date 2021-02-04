@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
+using aburron.abutoolkit.Variables;
 
-namespace aburron.abutoolkit
+namespace aburron.abutoolkit.TextSetters
 {
-	[AddComponentMenu("abutoolkit/TextSetter/IntTextSetter")]
+	[AddComponentMenu("abutoolkit/TextSetter/Int Text Setter")]
 	public class IntTextSetter : TextSetter<int, IntVariable> { }
 }

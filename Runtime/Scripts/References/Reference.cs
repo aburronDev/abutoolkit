@@ -1,19 +1,18 @@
-﻿using UnityEngine;
-using System;
+﻿using System;
+using UnityEngine;
+using aburron.abutoolkit.Variables;
 
-namespace aburron.abutoolkit
+namespace aburron.abutoolkit.References
 {
 	[Serializable]
 	public abstract class Reference { }
 
 	[Serializable]
-	public class Reference<T, U> : Reference where U : Variable<T>
+	public class Reference<T, U> where U : Variable<T>
 	{
 		[SerializeField] private bool useConstantValue = true;
 		[SerializeField] private T constantValue;
 		[SerializeField] private U variableValue;
-
-		public Reference() { }
 
 		public Reference(T value)
 		{
@@ -21,7 +20,7 @@ namespace aburron.abutoolkit
 			constantValue = value;
 		}
 
-		public T runtimeValue { get => useConstantValue ? constantValue : variableValue.GetValue(); }
+		public T runtimeValue { get => useConstantValue ? constantValue : variableValue.CurrentValue; }
 
 		public static implicit operator T (Reference<T, U> reference) => reference.runtimeValue;
 		public static implicit operator Reference<T, U> (T value) => new Reference<T, U>(value);

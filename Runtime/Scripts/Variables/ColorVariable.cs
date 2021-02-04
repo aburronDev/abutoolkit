@@ -1,8 +1,6 @@
-﻿using UnityEngine;
-
-namespace aburron.abutoolkit
+﻿namespace aburron.abutoolkit.Variables
 {
-    [CreateAssetMenu(fileName = "NewColor", menuName = "aburron/abutoolkit/Variables/Color")]
-    public class ColorVariable : Variable<Color> { }
+	[UnityEngine.CreateAssetMenu(fileName = "NewColor", menuName = "aburron/abutoolkit/Variables/Color")]
+	public class ColorVariable : Variable<UnityEngine.Color> { }
 }
 

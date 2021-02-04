@@ -8,7 +8,7 @@ namespace aburron.abutoolkit
 	{
 		public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
 		{
-			float height = base.GetPropertyHeight(property, label);
+			var height = base.GetPropertyHeight(property, label);
 
 			return !property.objectReferenceValue ? height *= 3 : height;
 		}
@@ -19,21 +19,22 @@ namespace aburron.abutoolkit
 
 			EditorGUI.BeginProperty(position, label, property);
 
-			if (!property.objectReferenceValue)
-			{
-				GUIStyle errorStyle = GUI.skin.GetStyle("HelpBox");
+				if (!property.objectReferenceValue)
+				{
+					GUIStyle errorStyle = GUI.skin.GetStyle("HelpBox");
 
-				errorStyle.fontSize = 13;
-				errorStyle.richText = true;
+					errorStyle.fontSize = 13;
+					errorStyle.richText = true;
 
-				EditorGUI.HelpBox(new Rect(position.x, position.y, position.width, position.height * 2), $"<b>{property.displayName}</b> needs a reference to work", MessageType.Error);
+					EditorGUI.HelpBox(new Rect(position.x, position.y, position.width, position.height * 2),
+						$"<b>{property.displayName}</b> needs a reference to work", MessageType.Error);
 				
-				position.y += position.height * 2;
-			}
+					position.y += position.height * 2;
+				}
 
-			position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);
+				position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);
 
-			EditorGUI.PropertyField(position, property, GUIContent.none);
+				EditorGUI.PropertyField(position, property, GUIContent.none);
 
 			EditorGUI.EndProperty();
 		}
