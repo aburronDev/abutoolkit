@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace aburron.abutoolkit.Events
+namespace aburron.abutoolkit
 {
 	[AddComponentMenu("abutoolkit/Events/Collision Enter2D Event Listener")]
 	public class CollisionEnter2DEventListener : GameEventListener

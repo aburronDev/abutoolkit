@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using aburron.abutoolkit.References;
 
-namespace aburron.abutoolkit.Events
+namespace aburron.abutoolkit
 {
 	[AddComponentMenu("abutoolkit/Events/Timer Event Listener")]
 	public class TimerEventListener : GameEventListener

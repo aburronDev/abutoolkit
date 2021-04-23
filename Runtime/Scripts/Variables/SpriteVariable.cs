@@ -1,7 +1,5 @@
-﻿using UnityEngine;
-
-namespace aburron.abutoolkit.Variables
+﻿namespace aburron.abutoolkit
 {
-	[CreateAssetMenu(fileName = "NewSprite", menuName = "aburron/abutoolkit/Variables/Sprite")]
-	public class SpriteVariable : Variable<Sprite> { }
+	[UnityEngine.CreateAssetMenu(fileName = "NewSprite", menuName = "aburron/abutoolkit/Variables/Sprite")]
+	public class SpriteVariable : Variable<UnityEngine.Sprite> { }
 }

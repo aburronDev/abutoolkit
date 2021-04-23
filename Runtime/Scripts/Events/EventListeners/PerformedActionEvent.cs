@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace aburron.abutoolkit.Events
+namespace aburron.abutoolkit
 {
 	[AddComponentMenu("abutoolkit/Events/Performed Action Event Listener")]
 	public class PerformedActionEvent : GameEventListener

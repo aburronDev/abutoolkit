@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace aburron.abutoolkit.Events
+namespace aburron.abutoolkit
 {
 	[AddComponentMenu("abutoolkit/Events/Triger Enter2D Event Listener")]
 	public class TriggerEnter2DEventListener : GameEventListener

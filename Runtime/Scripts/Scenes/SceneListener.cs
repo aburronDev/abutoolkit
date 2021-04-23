@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace aburron.abutoolkit.Scenes
+namespace aburron.abutoolkit
 {
 	[AddComponentMenu("abutoolkit/Scenes/Scene Listener")]
 	public class SceneListener : MonoBehaviour, ISerializationCallbackReceiver

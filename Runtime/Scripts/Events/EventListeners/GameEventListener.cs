@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace aburron.abutoolkit.Events
+namespace aburron.abutoolkit
 {
 	[AddComponentMenu("abutoolkit/Events/Game Event Listener")]
 	public class GameEventListener : MonoBehaviour

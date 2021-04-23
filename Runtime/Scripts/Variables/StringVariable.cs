@@ -1,7 +1,5 @@
-﻿using UnityEngine;
-
-namespace aburron.abutoolkit.Variables
+﻿namespace aburron.abutoolkit
 {
-	[CreateAssetMenu(fileName = "NewString", menuName = "aburron/abutoolkit/Variables/String")]
+	[UnityEngine.CreateAssetMenu(fileName = "NewString", menuName = "aburron/abutoolkit/Variables/String")]
 	public class StringVariable : Variable<string> { }
 }

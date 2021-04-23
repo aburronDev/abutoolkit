@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using aburron.abutoolkit.References;
 
-namespace aburron.abutoolkit.Events
+namespace aburron.abutoolkit
 {
 	[AddComponentMenu("abutoolkit/Events/Int Condition Event Listener")]
 	public class IntConditionEventListener : GameEventListener

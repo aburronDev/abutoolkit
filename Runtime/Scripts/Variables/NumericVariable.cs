@@ -1,4 +1,4 @@
-﻿namespace aburron.abutoolkit.Variables
+﻿namespace aburron.abutoolkit
 {
 	public abstract class NumericVariable<T> : Variable<T>
 	{

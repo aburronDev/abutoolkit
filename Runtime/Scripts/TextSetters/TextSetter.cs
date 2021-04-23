@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
-using aburron.abutoolkit.Variables;
 
-namespace aburron.abutoolkit.TextSetters
+namespace aburron.abutoolkit
 {
 	public abstract class TextSetter<T, U> : MonoBehaviour where U : Variable<T>
 	{

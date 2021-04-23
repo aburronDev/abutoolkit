@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace aburron.abutoolkit.Events
+namespace aburron.abutoolkit
 {
 	[CreateAssetMenu(fileName = "NewGameEvent", menuName = "aburron/abutoolkit/Events/Game Event")]
 	public class GameEvent : ScriptableObject

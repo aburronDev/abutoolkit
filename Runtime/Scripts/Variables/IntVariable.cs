@@ -1,4 +1,4 @@
-﻿namespace aburron.abutoolkit.Variables
+﻿namespace aburron.abutoolkit
 {
 	[UnityEngine.CreateAssetMenu(fileName = "NewInt", menuName = "aburron/abutoolkit/Variables/Int")]
 	public class IntVariable : NumericVariable<int> 

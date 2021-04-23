@@ -2,9 +2,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace aburron.abutoolkit.Scenes
+namespace aburron.abutoolkit
 {
-	public class SceneTools : MonoBehaviour
+	public class SceneTools
 	{
 		public static List<string> GetAllScenesInBuild()
 		{

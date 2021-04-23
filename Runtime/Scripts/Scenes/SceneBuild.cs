@@ -1,4 +1,4 @@
-﻿namespace aburron.abutoolkit.Scenes
+﻿namespace aburron.abutoolkit
 {
 	[System.Serializable]
 	public class SceneBuild

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace aburron.abutoolkit.Variables
+namespace aburron.abutoolkit
 {
 	public abstract class Variable<T> : ScriptableObject
 	{

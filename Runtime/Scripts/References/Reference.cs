@@ -1,8 +1,7 @@
 ﻿using System;
 using UnityEngine;
-using aburron.abutoolkit.Variables;
 
-namespace aburron.abutoolkit.References
+namespace aburron.abutoolkit
 {
 	[Serializable]
 	public abstract class Reference { }

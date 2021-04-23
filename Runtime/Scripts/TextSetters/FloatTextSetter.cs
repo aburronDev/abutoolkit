@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using aburron.abutoolkit.Variables;
 
-namespace aburron.abutoolkit.TextSetters
+namespace aburron.abutoolkit
 {
 	[AddComponentMenu("abutoolkit/TextSetter/Float Text Setter")]
 	public class FloatTextSetter : TextSetter<float, FloatVariable> { }

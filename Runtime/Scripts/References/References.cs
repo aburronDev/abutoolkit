@@ -1,7 +1,6 @@
 ﻿using System;
-using aburron.abutoolkit.Variables;
 
-namespace aburron.abutoolkit.References
+namespace aburron.abutoolkit
 {
 	[Serializable]
 	public class IntReference : Reference<int, IntVariable>
